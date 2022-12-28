@@ -51,11 +51,8 @@ class Tic_Tac_Toe():
         self.player_X_starts = not self.player_X_starts
         self.player_X_turns = self.player_X_starts
         self.board_status = np.zeros(shape=(3, 3))
-
-    # ------------------------------------------------------------------
-    # Drawing Functions:
-    # The modules required to draw required game based object on canvas
-    # ------------------------------------------------------------------
+        
+        
 
     def draw_O(self, logical_position):
         logical_position = np.array(logical_position)
@@ -108,10 +105,8 @@ class Tic_Tac_Toe():
         self.canvas.create_text(size_of_board / 2, 15 * size_of_board / 16, font="cmr 20 bold", fill="gray",
                                 text=score_text)
 
-    # ------------------------------------------------------------------
-    # Logical Functions:
-    # The modules required to carry out game logic
-    # ------------------------------------------------------------------
+        
+        
 
     def convert_logical_to_grid_position(self, logical_position):
         logical_position = np.array(logical_position, dtype=int)
